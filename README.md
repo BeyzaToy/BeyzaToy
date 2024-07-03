@@ -1,14 +1,14 @@
-const sozVerdik = new Promise(function(resolve, reject){
-  if (herseyYolunda) {
+const siparişAlındı = new Promise(function(resolve, reject){
+  if (siparişHazırlanıyor) {
     resolve('İşlem tamam!');
   } else {
-    reject('Bir sıkıntı var...');
+    reject('Problem var...');
   }
 })
 
-sozVerdik.then(function(cevap){
+siparişAlındı.then(function(cevap){
   console.log(cevap) // 'İşlem tamam!' yazısını basar
 }).catch(function(hata){
-  console.log(hata) // 'Bir sıkıntı var...' yazısını basar
+  console.log(hata) // 'Problem var...' yazısını basar
 })
 
